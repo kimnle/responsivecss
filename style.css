@@ -7,11 +7,13 @@ h3 {
     display: block;
 }
 
-/* Create three equal columns that float next to each other */
+.nestedContent {
+    background-color: red;
+}
+
 .column {
-    float: left;
-    width: 33.33%;
-  }
+    width: 100%;
+}
   
   /* Clear floats after the columns */
   .row:after {
@@ -22,8 +24,10 @@ h3 {
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
   @media screen and (min-width: 600px) {
+    /* Create three equal columns that float next to each other */
     .column {
-      width: 100%;
+    float: left;
+    width: 33.33%;
     }
 
     body {
@@ -31,7 +35,7 @@ h3 {
     }
 
     h3 {
-        
+        display: none;
     }
   }
 
